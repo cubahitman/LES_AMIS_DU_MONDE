@@ -1,39 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Inscription{% endblock %}
+{% block title %}Inscription
+{% endblock %}
 
-{% block body %}<header id="head" class="secondary"></header>
-	
-    <form class="needs-validation" novalidate>
-	<section class="container">
-		<div class="row">
-			<div class="col">
-			<h1>Inscription</h1>
+{% block body %}
+	<header id="head" class="secondary"></header>
 
-			{{ form_errors(registrationForm) }}
+	<form class="needs-validation" novalidate>
+		<section class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Inscription</h1>
 
-			{{ form_start(registrationForm) }}
-            <fieldset class="mb-3">
-            <legend>Mon identité</legend>
-            {{ form_row(registrationForm.nom) }}
-            {{ form_row(registrationForm.prenom) }}
-            {{ form_row(registrationForm.email) }}
-            </fieldset>
+					{{ form_errors(registrationForm) }}
 
-            <fieldset class="mb-3 ">
-            <legend>Mes coordonnées</legend>
-            {{ form_row(registrationForm.adresse) }}
-            {{ form_row(registrationForm.CP) }}
-            {{ form_row(registrationForm.ville) }}
-            </fieldset>
-			{{ form_row(registrationForm.plainPassword, {
+					{{ form_start(registrationForm) }}
+					<fieldset class="mb-3">
+						<legend>Mon identité</legend>
+						{{ form_row(registrationForm.nom) }}
+						{{ form_row(registrationForm.prenom) }}
+						{{ form_row(registrationForm.email) }}
+					</fieldset>
+
+					<fieldset class="mb-3 ">
+						<legend>Mes coordonnées</legend>
+						{{ form_row(registrationForm.adresse) }}
+						{{ form_row(registrationForm.CP) }}
+						{{ form_row(registrationForm.ville) }}
+					</fieldset>
+					{{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
-			{{form_row(registrationForm.RGPDConsent) }}
-			<button type="submit" class="btn btn-primary btn-lg my-3">M'inscrite</button>
-			{{ form_end(registrationForm) }}
-		</div>
-	</div>
-   </section>
+					{{form_row(registrationForm.RGPDConsent) }}
+					<button type="submit" class="btn btn-primary btn-lg my-3">M'inscrite</button>
+					{{ form_end(registrationForm) }}
+				</div>
+			</div>
+		</section>
 
-{% endblock %}
+	{% endblock %}
