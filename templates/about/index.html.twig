@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}LES AMIS DU MONDE || À propos de nous{% endblock %}
+
+{% block body %}
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+
+		<ol class="breadcrumb">
+			<li><a href="{{path('app_home')}}">Accueil</a></li>
+			<li class="active">À propos de nous</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Article main content -->
+			<article class="col-sm-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">À propos de nous</h1>
+				</header>
+				<h3>ACTION HUAMANITAIRE</h3>
+				<p><img src="{{asset('images/mac.jpg')}}" alt="" class="img-rounded pull-right" width="300" >LES AMIS DU MONDE est une Ong qui soutient 357 orphelins, 105 veuves et 197 personnes démunies.</p>
+				<p> Des enfants en détresse, des veuves et des orphelins en situation difficile ont bénéficié du soutien de l'Ong "Les Amis Du Monde"(LADM), une organisation internationale engagée aux côtés des personnes vulnérables.</p>
+				<p>Ce sont à ce jour 357 orphelins, 105 veuves et 197 personnes démunies qui sont prises en charge par ladite structure. Dans un communiqué de presse, Djah Zidago Lazare, président de l'Ong, précise que son organistion aide ces personnes par le financement de leurs projets afin de les rendre autonomes.</p>
+				<p>"Elle lutte contre le chômage, assite les prisonniers, et agit dans le domaine agricole en permettant à des agriculteurs du pays profonds de commercialiser leurs produits en jouant sur ses relations avec des partenaires à l'étranger. Cette organiisation est implantée dans sept(07) pays, notamment en Côte d'Ivoir, au Burkina Faso, au Sénégaal, en Guinée, au Maroc, en Tunisie, en RD Congo" lit-on dans le communiqué</p>
+				<p> Le choix d'aide et d'assistance aux personnes vulnérables répond, selon le président Djah Lazare, à sa volonté d'apporter un secours au monde entier en général, et particulèrement à l'Afrique.</p>
+				<p>"Nous avonns opté pour l'aide sociale parce que, comme on le constate, l'Afrique et le monde en général souffrent énormément aujourd'hui. Des besoins sont visible dans tous les domaines (santé, éducatiob, assistance juridique, social, etc)", justifie le président Djah Lazare.</p>
+				
+			</article>
+			<!-- /Article -->
+			
+			<!-- Sidebar -->
+			<aside class="col-sm-4 sidebar sidebar-right">
+
+				<div class="widget">
+					<h4>Vacancies</h4>
+					<ul class="list-unstyled list-spaces">
+						<li><a href="">Lorem ipsum dolor</a><br><span class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, laborum.</span></li>
+						<li><a href="">Totam, libero, quis</a><br><span class="small text-muted">Suscipit veniam debitis sed ipsam quia magnam eveniet perferendis nisi.</span></li>
+						<li><a href="">Enim, sequi dignissimos</a><br><span class="small text-muted">Reprehenderit illum quod unde quo vero ab inventore alias veritatis.</span></li>
+						<li><a href="">Suscipit, consequatur, aut</a><br><span class="small text-muted">Sed, mollitia earum debitis est itaque esse reiciendis amet cupiditate.</span></li>
+						<li><a href="">Nam, illo, veritatis</a><br><span class="small text-muted">Delectus, sapiente illo provident quo aliquam nihil beatae dignissimos itaque.</span></li>
+					</ul>
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
+{% endblock %}
