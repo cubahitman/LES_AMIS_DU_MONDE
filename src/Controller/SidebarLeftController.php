@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class SidebarLeftController extends AbstractController
 {
-    #[Route('/sidebar/left', name: 'app_sidebar_left')]
+    #[Route('/sidebar_left', name: 'app_sidebar_left')]
     public function index(): Response
     {
         return $this->render('sidebar_left/index.html.twig', [
